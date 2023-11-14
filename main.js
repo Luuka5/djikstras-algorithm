@@ -1,3 +1,6 @@
+import "js/node.js";
+import "js/pathfinding.js";
+
 var canvas = document.getElementById("canvas");
 canvas.width = canvas.parentNode.clientWidth;
 canvas.height = canvas.parentNode.clientHeight;
