@@ -122,3 +122,6 @@ function clearAll() {
 function run() {
   algo.start();
 }
+
+canvas.addEventListener("mousemove", mouse);
+canvas.addEventListener("mousedown", mouse);
