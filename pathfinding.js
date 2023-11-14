@@ -5,7 +5,7 @@ const rotation = [
   { x: 0, y: -1 },
 ];
 
-export class DijkstrasAlgo {
+class DijkstrasAlgo {
   constructor() {
     this.setNodes();
     this.x = start.x;

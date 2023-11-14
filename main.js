@@ -1,33 +1,24 @@
-import { DijkstrasAlgo } from "js/node.js";
-import { Node } from "js/pathfinding.js";
-
 var canvas = document.getElementById("canvas");
 canvas.width = canvas.parentNode.clientWidth;
 canvas.height = canvas.parentNode.clientHeight;
 var crc = canvas.getContext("2d");
 
-const green = "#86c232",
-  darkGreen = "#61892f",
-  black = "#222629",
-  grey = "#474b4f",
-  lightGrey = "#6b6e70";
-
 const scale = 50;
-var w = Math.floor(canvas.width / scale);
-var h = Math.floor(canvas.height / scale);
-var offsetX = (canvas.width % scale) / 2.0;
-var offsetY = (canvas.height % scale) / 2.0;
+window.w = Math.floor(canvas.width / scale);
+window.h = Math.floor(canvas.height / scale);
+window.offsetX = (canvas.width % scale) / 2.0;
+window.offsetY = (canvas.height % scale) / 2.0;
 
-let algo;
-let algoIntrvl = 0;
+window.algo;
+window.algoIntrvl = 0;
 
-var interval;
-var map = [];
-var start = {
+window.interval;
+window.map = [];
+window.start = {
   x: 0,
   y: 0,
 };
-var goal = {
+window.goal = {
   x: w - 1,
   y: h - 1,
 };
@@ -125,3 +116,5 @@ function run() {
 
 canvas.addEventListener("mousemove", mouse);
 canvas.addEventListener("mousedown", mouse);
+document.getElementById("run").addEventListener("click", run);
+document.getElementById("clear").addEventListener("click", clearAll);

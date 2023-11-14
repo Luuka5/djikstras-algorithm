@@ -1,4 +1,9 @@
-export class Node {
+const green = "#86c232",
+  darkGreen = "#61892f",
+  grey = "#474b4f",
+  lightGrey = "#6b6e70";
+
+class Node {
   constructor(posX, posY) {
     this.pos = {
       x: posX,
