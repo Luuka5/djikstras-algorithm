@@ -1,5 +1,5 @@
-import "js/node.js";
-import "js/pathfinding.js";
+import { DijkstrasAlgo } from "js/node.js";
+import { Node } from "js/pathfinding.js";
 
 var canvas = document.getElementById("canvas");
 canvas.width = canvas.parentNode.clientWidth;

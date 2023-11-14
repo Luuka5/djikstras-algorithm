@@ -1,4 +1,4 @@
-class Node {
+export class Node {
   constructor(posX, posY) {
     this.pos = {
       x: posX,
