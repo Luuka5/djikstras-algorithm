@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title> Path Finding Algorithms </title>
+      <link href="style.css" type="text/css" rel="stylesheet"/>
+      <meta charset="UTF-8">
+   </head>
+   <body>
+      <div class="control">
+         <h1>Dijkstra's algorithm</h1>
+         <p>Draw walls to the grid with your mouse. To erase walls keep ctrl button pressed.</p>
+         <div class="button" onclick="run()">Run algorithm</div>
+         <div class="button" onclick="clearAll()">Clear grid</div>
+         <p class="footer">Touko Päivänsalo 2020</p>
+      </div>
+      <div class="canvasContainer">
+         <canvas id="canvas" onmousemove="mouse(event)" onmousedown="mouse(event)"></canvas>
+       </div>
+      
+      <script src="js/node.js"></script>
+      <script src="js/pathFinding.js"></script>
+      <script src="main.js"></script>
+   </body>
+</html>
